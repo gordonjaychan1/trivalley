@@ -12,7 +12,7 @@
   --navy: #1f3354;
   --radius: 18px;
   --shadow: 0 1px 2px rgba(29,26,23,.06), 0 8px 24px rgba(29,26,23,.07);
-  --display: "Fraunces", Georgia, serif;
+  --display: "Source Serif 4", Georgia, serif;
   --body: "Nunito Sans", system-ui, -apple-system, sans-serif;
   --jp: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
   --belts: linear-gradient(90deg,
@@ -76,7 +76,7 @@ p { margin: 0 0 1em; }
 .hero .wrap { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; }
 .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
 .eyebrow::before { content: ""; width: 28px; height: 3px; background: var(--red); border-radius: 2px; }
-.hero h1 em { font-style: italic; color: var(--red); }
+.hero h1 em { font-style: normal; color: var(--red); }
 .hero .lead { font-size: 1.2rem; color: var(--ink-soft); max-width: 34em; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
 .hero-art { position: relative; }
@@ -107,7 +107,6 @@ p { margin: 0 0 1em; }
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
-.card .icon { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: var(--paper-2); color: var(--red); font-family: var(--jp); font-weight: 700; font-size: 1.5rem; margin-bottom: 14px; }
 .card p { color: var(--ink-soft); margin: 0; }
 .card h3 { margin-bottom: .35em; }
 
@@ -133,7 +132,6 @@ p { margin: 0 0 1em; }
 /* Class steps */
 .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; counter-reset: s; }
 .steps li { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 12px; text-align: center; font-size: .92rem; line-height: 1.35; position: relative; }
-.steps .num { display: block; font-family: var(--jp); font-weight: 700; font-size: 1.6rem; color: var(--red); margin-bottom: 4px; }
 .steps b { display: block; color: var(--ink); font-size: .98rem; }
 .steps small { color: var(--ink-soft); font-size: .82rem; }
 
@@ -232,13 +230,13 @@ form.trial .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
 /* Footer */
 .site-footer { background: var(--ink); color: #cfc6b8; padding: 48px 0 28px; font-size: .95rem; }
-.site-footer .wrap { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; }
+.site-footer .wrap { display: grid; grid-template-columns: minmax(0, 420px) auto auto; justify-content: space-between; gap: 32px 56px; }
 .site-footer h3 { color: var(--paper); font-size: 1.05rem; }
 .site-footer a { color: var(--paper); }
 .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
 .site-footer .brand { color: var(--paper); margin-bottom: 12px; }
 .site-footer .brand .motto { color: #a69c8d; }
-.copyright { border-top: 1px solid rgba(255,255,255,.1); margin-top: 32px; padding-top: 18px; font-size: .85rem; color: #a69c8d; }
+.copyright { border-top: 1px solid rgba(255,255,255,.1); margin-top: 32px; padding-top: 18px; font-size: .85rem; color: #a69c8d; text-align: center; }
 .copyright .wrap { display: block; }
 
 /* Subpage (Goju Ryu) */
