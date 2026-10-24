@@ -51,7 +51,6 @@ p { margin: 0 0 1em; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(250,246,238,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .site-header .wrap { display: flex; align-items: center; gap: 16px; min-height: 72px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); margin-right: auto; }
-.brand img { width: 44px; height: 44px; }
 .brand .title { display: block; font-family: var(--display); font-weight: 700; font-size: 1.2rem; line-height: 1.1; }
 .brand .motto { display: block; font-size: .78rem; color: var(--ink-soft); letter-spacing: .04em; }
 .nav ul { list-style: none; display: flex; gap: 4px; margin: 0; padding: 0; align-items: center; }
@@ -99,7 +98,6 @@ p { margin: 0 0 1em; }
 .section.ink { background: var(--ink); color: var(--paper); }
 .section.ink h2, .section.ink h3 { color: var(--paper); }
 .sec-head { display: flex; align-items: flex-start; gap: 18px; margin-bottom: 36px; }
-.sec-head .kanji { flex: none; writing-mode: vertical-rl; font-family: var(--jp); font-weight: 700; font-size: 1.15rem; color: #fff; background: var(--red); padding: 12px 7px; border-radius: 8px; letter-spacing: .18em; line-height: 1; }
 .sec-head p { color: var(--ink-soft); max-width: 40em; margin: 0; font-size: 1.1rem; }
 .section.ink .sec-head p { color: #cfc6b8; }
 .center { text-align: center; }
